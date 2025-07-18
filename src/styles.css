@@ -1,0 +1,198 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat, sans-serif;
+}
+
+.header {
+    background: cadetblue;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+}
+
+.sidebar {
+    background: rgb(214, 223, 243);
+    padding: 20px;
+}
+
+.button-div {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: rgb(171, 230, 230);
+    font-family: Montserrat;
+}
+
+.divider {
+    background: rgb(48, 47, 47);
+    width: 100%;
+    height: 3px;
+    margin-bottom: 20px;
+}
+
+.filter-div {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-header-text {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.form-field {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.modal-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-buttons button {
+    margin: 5px;
+}
+
+.main-content {
+    background: rgb(214, 223, 243);
+    flex: 1;
+    display: flex;
+    gap: 15px;
+}
+
+.main-content-project {
+    flex: 1;
+    background: rgb(175, 175, 189);
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content-project-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+    font-size: 24px;
+    font-weight: 800;
+    background: rgb(102, 124, 121);
+}
+
+.main-content-project-tasks {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 20px;
+}
+
+.main-content-project-item {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 50px;
+}
+
+.completed {
+    border: 3px solid green;
+}
+
+.task-title-text {
+    width: 70%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.main-content-project-item img {
+    height: 20px;
+    width: auto;
+    margin: 10px;
+}
+
+.main-content-project-item img:hover {
+    cursor: pointer;
+}
+
+.task-priority {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.high {
+    border: 2px solid red;
+    background: orangered;
+}
+
+.medium {
+    border: 2px solid rgb(161, 161, 14);
+    background: yellow;
+}
+
+.low {
+    border: 2px solid rgb(75, 97, 116);
+    background: skyblue;
+}
+
+#info-dialog {
+    display: flex;
+    width: 400px;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.info-header {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer {
+    background: cadetblue;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
