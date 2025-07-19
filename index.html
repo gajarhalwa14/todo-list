@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+<script defer src="main.js"></script></head>
+<body>
+    <div class="header">
+        Todo List
+    </div>
+    <div class="content">
+        <div class="sidebar">
+            <div class="button-div">
+                <dialog class="new-project-dialog">
+                    <form method="dialog">
+                        <div class="form-field">
+                            <label for="project-title">Project Title</label>
+                            <input type="text" id="project-title" required>
+                        </div>
+                        <div class="modal-buttons">
+                            <button id="submit-project-btn" value="submit">Submit</button>
+                            <button id="cancel-project-btn" value="cancel">Cancel</button>
+                        </div>
+
+                    </form>
+                </dialog>
+                <dialog class="new-task-dialog">
+                    <form method="dialog">
+                        <div class="form-field">
+                            <label for="task-title">Task Title</label>
+                            <input type="text" id="task-title" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="description">Description</label>
+                            <textarea id="description" rows="5" cols="55" placeholder="Enter description here..." required></textarea>
+                        </div>
+                        <div class="form-field">
+                            <label for="due-date">Due Date</label>
+                            <input type="date" id="due-date" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="priority">Priority</label>
+                            <select id="priority" name="priority" required>
+                                <option value="high">High</option>
+                                <option value="medium">Medium</option>
+                                <option value="low">Low</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label for="project-type">Project Type</label>
+                            <select id="project-type" name="project-type" required></select>
+                        </div>
+                        <div class="modal-buttons">
+                            <button id="submit-task-btn" value="submit">Submit</button>
+                            <button id="cancel-task-btn" value="cancel">Cancel</button>
+                        </div>
+                    </form>
+                </dialog>
+                <button id="new-project-btn">New Project</button>
+                <button id="new-task-btn">New Task</button>
+            </div>
+            <div class="divider"></div>
+            <div class="filter-div">
+                <p class="filter-header-text">Filter</p>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="main-content-project">
+                <div class="main-content-project-header">General</div>
+                <div class="main-content-project-tasks">
+                    <div class="main-content-project-item">
+                        <img src="bcf8d6ff346603c8a51a.svg">
+                        <div class="task-title-text">
+                            test
+                        </div>
+                        <div class="task-priority high">
+                            High
+                        </div>
+                        <img src="3ede19ed228086e87d89.svg">
+                    </div>
+                    <div class="main-content-project-item"></div>
+                    <div class="main-content-project-item"></div>
+                    <div class="main-content-project-item"></div>
+                    <div class="main-content-project-item"></div>
+
+                </div>
+            </div>
+            <div class="main-content-project">
+                <div class="main-content-project-header">General</div>
+                <div class="main-content-project-tasks">
+                    <div class="main-content-project-item">
+                        <img src="bcf8d6ff346603c8a51a.svg">
+                        <div class="task-title-text">
+                            test
+                        </div>
+                        <div class="task-priority low">
+                            Low
+                        </div>
+                        <img src="3ede19ed228086e87d89.svg">
+                    </div>
+                    <div class="main-content-project-item"></div>
+                    <div class="main-content-project-item"></div>
+                    <div class="main-content-project-item"></div>
+                    <div class="main-content-project-item"></div>
+
+                </div>
+            </div>
+            <div class="main-content-project">
+                <div class="main-content-project-header">General</div>
+                <div class="main-content-project-tasks">
+                    <div class="main-content-project-item">
+                        <img src="bcf8d6ff346603c8a51a.svg">
+                        <div class="task-title-text">
+                            test
+                        </div>
+                        <div class="task-priority medium">
+                            Medium
+                        </div>
+                        <img src="3ede19ed228086e87d89.svg">
+                    </div>
+                    <div class="main-content-project-item"></div>
+                    <div class="main-content-project-item"></div>
+                    <div class="main-content-project-item"></div>
+                    <div class="main-content-project-item"></div>
+
+                </div>
+            </div>          
+        </div>
+    </div>
+    <div class="footer">
+        Made by @gajarhalwa14 on GitHub
+    </div>
+    <!-- <dialog open id="info-dialog">
+            <div class="info-header">
+                Test
+            </div>
+            <div class="info-content">
+                <div class="info-description">
+                    fewafewafewafewafweaf fewafewafewafewafewafewafwaefewafaewf ewfwafewafaewfawf
+                </div>
+                <div class="info-due-date">
+                    1970-01-01
+                </div>
+                <div class="info-priority">
+                    Strong
+                </div>
+                <div class="info-project-type">
+                    General
+                </div>
+                <div class="info-task-completion">
+                    Not Completed
+                </div>
+                <div class="info-buttons">
+                    <button id="info-done-btn" value="done">Done</button>
+                    <button id="info-completion-btn" value="complete">Mark Complete</button>
+                </div>
+            </div>
+    </dialog> -->
+    
+</body>
+</html>
